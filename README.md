@@ -1,13 +1,32 @@
-The core classes, functions, and methods that will be necessary are:
+# ByBitBOT
 
-1. `BybitAPI`: This class will handle all interactions with the Bybit API. It will have methods for getting the current market price, placing orders, and getting the account balance.
+ByBitBOT est un bot de trading automatisé pour la plateforme de trading Bybit. Il utilise l'indicateur MACD (Moving Average Convergence Divergence) pour prendre des décisions de trading.
 
-2. `MACDIndicator`: This class will calculate the MACD indicator based on the price data. It will have a method `calculate` that will return the MACD line and the signal line.
+## Dépendances
 
-3. `TradingBot`: This class will use the `BybitAPI` and `MACDIndicator` to make trading decisions. It will have a method `run` that will start the trading loop, and a method `trade` that will execute trades based on the MACD signals.
+- requests
+- pandas
+- numpy
+- python-dotenv
 
-4. `main`: This function will be the entry point of the program. It will create an instance of the `TradingBot` and start it.
+Vous pouvez installer ces dépendances en utilisant la commande suivante :
 
-Now, let's write the code for each of these components.
+```
+pip install --user -r requirements.txt
+```
 
-requirements.txt
+## Utilisation
+
+Pour exécuter le bot, utilisez la commande suivante :
+
+```
+python main.py
+```
+
+## Fonctionnement
+
+Le bot utilise l'API Bybit pour obtenir le prix du marché et passer des ordres. Il utilise l'indicateur MACD pour décider quand acheter et vendre.
+
+---
+
+Veuillez noter que ceci est une ébauche et peut nécessiter des ajustements en fonction des détails spécifiques du projet.
